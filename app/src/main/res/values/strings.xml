@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Nomina</string>
+    <string name="strNumeroRecibo">Numero de recibo</string>
+    <string name="strNombre">Nombre</string>
+    <string name="strHorasTrabajadas">Horas Trabajadas</string>
+    <string name="strHorasExtras">Horas Extras</string>
+    <string name="strPuesto">Puesto</string>
+    <string name="strAuxiliar">Auxiliar</string>
+    <string name="strAlbanil">Albañil</string>
+    <string name="strIngeniero">Ingeniero Obra</string>
+    <string name="strSubtotal">Subtotal</string>
+    <string name="strImpuesto">Impuesto</string>
+    <string name="strTotal">Total a Pagar</string>
+    <string name="strCalcular">Calcular</string>
+    <string name="strLimpiar">Limpiar</string>
+    <string name="strRegresar">Regresar</string>
 </resources>
