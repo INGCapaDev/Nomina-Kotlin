@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun ingresar(){
         if(txtNombre.text.toString().isEmpty()){
-            Toast.makeText(this.applicationContext, "Nombre Requirido", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this.applicationContext, "Nombre Requerido", Toast.LENGTH_SHORT).show()
             return
         }
         val strNombre = txtNombre.text.toString()
