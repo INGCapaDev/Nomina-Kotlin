@@ -1,6 +1,6 @@
 package com.example.nomina
 
-class ReciboNomina(private var numRecibo: Int, private var nombre: String, private var horasTrabNormal: Float, private var horasTrabExtras: Float, private var puesto: Int, private var impuestoPorc: Float) {
+class ReciboNomina( var numRecibo: Int,  var nombre: String,  var horasTrabNormal: Double,  var horasTrabExtras: Double,  var puesto: Int,  var impuestoPorc: Double) {
 
     fun calcularSubtotal(): Double {
 
