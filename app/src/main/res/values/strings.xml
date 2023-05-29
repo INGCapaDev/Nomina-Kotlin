@@ -15,4 +15,7 @@
     <string name="strLimpiar">Limpiar</string>
     <string name="strRegresar">Regresar</string>
     <string name="strImpuestoPor">Impuesto Porcentaje 16%</string>
+    <string name="strNomina">Calculo de pago de nomina</string>
+    <string name="strEntrar">Entrar</string>
+    <string name="strSalir">Salir</string>
 </resources>
