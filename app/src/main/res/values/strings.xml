@@ -14,4 +14,5 @@
     <string name="strCalcular">Calcular</string>
     <string name="strLimpiar">Limpiar</string>
     <string name="strRegresar">Regresar</string>
+    <string name="strImpuestoPor">Impuesto Porcentaje 16%</string>
 </resources>

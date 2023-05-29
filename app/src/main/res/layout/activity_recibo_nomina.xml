@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,20 +9,145 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNumRecibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginVertical="14dp"
+            android:text="@string/strNumeroRecibo"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/strNombre"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/txtHorasNormal"
+            android:autofillHints=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="14dp"
+            android:hint="@string/strHorasTrabajadas"/>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/txtHorasExtra"
+            android:autofillHints=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="14dp"
+            android:hint="@string/strHorasExtras"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:text="@string/app_name"/>
+            android:text="@string/strPuesto"
+            android:textSize="16sp"
+            android:layout_marginBottom="14dp"/>
 
-        <EditText
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:hint="@string/strNumeroRecibo"/>
+            android:orientation="horizontal">
 
+            <RadioButton
+                android:id="@+id/rdbPuesto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strAuxiliar"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rdbPuesto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strAlbanil"/>
+
+            <RadioButton
+                android:id="@+id/rdbPuesto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strIngeniero"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblImpuestoPor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginVertical="14dp"
+            android:text="@string/strImpuestoPor"
+            />
+
+        <TextView
+            android:id="@+id/lblSubtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginVertical="14dp"
+            android:text="@string/strSubtotal"
+            />
+
+        <TextView
+            android:id="@+id/lblImpuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginVertical="14dp"
+            android:text="@string/strImpuesto"
+            />
+
+        <TextView
+            android:id="@+id/lblTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginVertical="14dp"
+            android:text="@string/strTotal"
+            />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/strCalcular"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/strLimpiar"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/strRegresar"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
